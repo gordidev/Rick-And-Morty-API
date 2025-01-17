@@ -1,0 +1,50 @@
+body{/*Cuerpo de la web*/
+    color: white;/*Cambia el color de las letras a blanco*/
+    font-family: sans-serif;/*Cambia la fuente de letra*/
+    text-align: center;/*Alinea el texto al centro*/
+    background-color: #242424;/*Cambia el color del fondo*/
+}
+#title{/*h1 Titulo*/
+    display: inline-block;/*Hace que el fondo del titulo no se estire mas de lo suficiente*/
+    background-color: cornflowerblue;/*Cambia el color del fondo*/
+    padding: 20px;/*Añade un margen interior de 20 pixeles*/
+    margin-bottom: 20px;/*Añade un margen de 20 pixeles hacia abajo*/
+    border-radius: 20px;/*Redondea los borde en 20 pixeles*/
+}
+#characters{/*Div padre de las tarjetas*/
+    display: flex;/*Pone las tarjetas en linea*/
+    flex-wrap: wrap;/*Si las etiquetas salen de pantalla se hace un salto de linea*/
+    justify-content: space-around;
+    align-items: stretch;/*Controla que todos los divs tengan la misma altura sin importar los caracteres del h1 nombre*/
+    gap: 20px; /*Crea un espacio entre elementos de 20 pixeles*/
+}
+#character{/*Div con id character -> tarjetas*/
+    background-color: cornflowerblue;/*Cambia el color del fondo*/
+    padding: 30px;/*Crea unos margenes interiores de 30 pixeles*/
+    border-radius: 20px;/*Redondea los bordes en un radio de 20 pixeles*/
+    max-width: 300px;/*Genera una altura maxima para que las tarjetas no sean mas grandes unas que otras*/
+    
+}
+img{/*Imagenes*/
+    border-radius: 50px;/*Crea un borde redondeado para las imagenes*/
+    box-shadow: #242424 0px 0px 10px 5px;/*Crea una sombra para las imagenes*/
+}
+
+.button{/*Botones*/
+    color: white;/*Color texto de los botones*/
+    background-color: cornflowerblue;/*Cambia el color de fondo de los botones*/
+    border-style: none;/*Quita los bordes a los botones*/
+    height: 50px;/*Pone una altura de 50 pixeles*/
+    width: 100px;/*Pone un ancho de 100 pixeles*/
+    margin-top: 10px;/*Pone un margin de 10 pixeles hacia arriba*/
+    border-radius: 20px;/*Redondea los bordes en un radio de 20 pixeles*/
+}
+.button:hover{/*Al poner el raton sobre el boton*/
+    background-color: rgb(86, 128, 206);/*Cambia el color del fondo*/
+}
+#control{/*Div de los botones y page Counter*/
+    display: flex;/*Pone los elementos en linea*/
+    justify-content: center;/*Centra los elementos*/
+    align-items: center;/*Alinea los elementos al centro*/
+    gap: 20px;/*Añade un margen de 20 pixeles entre elementos*/
+}
